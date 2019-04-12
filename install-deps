@@ -22,7 +22,7 @@ install_openblas() {
         echo "Error. OpenBLAS could not be compiled";
         exit $RET;
     fi
-    sudo make install
+    make install
     RET=$?;
     if [ $RET -ne 0 ]; then
         echo "Error. OpenBLAS could not be installed";
